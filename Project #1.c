@@ -76,10 +76,8 @@ void setup()
     #define RUNNING_CORE 1
   #endif
 
-  xTaskCreatePinnedToCore(Thread_1, "ClockDisplay", 4096, NULL, 1,NULL, RUNNING_CORE);
-  xTaskCreatePinnedToCore(Thread_2, "NTPUpdate", 4096, NULL, 2,NULL, RUNNING_CORE);
+  xTaskCreatePinnedToCore(Thread_1, "ClockDisplay", 4096, NULL, 1, NULL, RUNNING_CORE);
+  xTaskCreatePinnedToCore(Thread_2, "NTPUpdate", 4096, NULL, 2, NULL, RUNNING_CORE);
 }
 
-void loop() 
-{
-}
+void loop() {}

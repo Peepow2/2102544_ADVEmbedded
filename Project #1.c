@@ -44,7 +44,8 @@ void Thread_2(void *parameter)
 }
 
 // Callback function (gets called when time adjusts via NTP)
-void timeavailable(struct timeval *t) {
+void timeavailable(struct timeval *t) 
+{
   Serial.println("Got time adjustment from NTP!");
   printLocalTime();
 }

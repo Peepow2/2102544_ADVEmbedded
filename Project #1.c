@@ -2,8 +2,8 @@
 #include "time.h"
 #include "esp_sntp.h"
 
-const char *ssid = "Peerawich";
-const char *password = "ADV2102544";
+const char *ssid = "YOUR SSID";
+const char *password = "PASSWORD";
 
 const char *ntpServer1 = "pool.ntp.org";
 const char *ntpServer2 = "time.nist.gov";

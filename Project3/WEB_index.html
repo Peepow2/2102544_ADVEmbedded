@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="5">
+  <title>Sensor Data</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding-top: 20px; background-color: #f4f4f9; }
+    h1 { color: #333; }
+    table { margin: 20px auto; background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    caption { font-size: 1.2em; margin-bottom: 5px; font-weight: bold; }
+    td { padding: 6px 12px; font-size: 1.1em; }
+    .red { color: #dc3545; }
+    .green { color: #28a745; }
+    .blue { color: #007bff; }
+  </style>
+</head>
+<body>
+  <h1>Sensor Data</h1>
+  <p>Last updated: %TIME%</p>
+  <p>Refresh every 5 seconds.</p>
+
+  <table>
+    <caption>BMP280 Temperature and Pressure</caption>
+    <tr><td>Temperature</td><td><span class="red">%BMP_TEMP% °C</span></td></tr>
+    <tr><td>Pressure</td><td><span class="blue">%PRESSURE% hPa</span></td></tr>
+    <tr><td>Height</td><td><span class="green">%HEIGHT% m</span></td></tr>
+  </table>
+
+  <table>
+    <caption>MPU6050 Accelerometer Gyroscope and Temperature</caption>
+    <tr><td>X Acceleration</td><td><span class="red">%ACCEL_X% m/s²</span></td></tr>
+    <tr><td>Y Acceleration</td><td><span class="blue">%ACCEL_Y% m/s²</span></td></tr>
+    <tr><td>Z Acceleration</td><td><span class="green">%ACCEL_Z% m/s²</span></td></tr>
+    <tr><td>X Rotation</td><td><span class="red">%GYRO_X% rad/s</span></td></tr>
+    <tr><td>Y Rotation</td><td><span class="blue">%GYRO_Y% rad/s</span></td></tr>
+    <tr><td>Z Rotation</td><td><span class="green">%GYRO_Z% rad/s</span></td></tr>
+    <tr><td>Temperature</td><td><span class="green">%MPU_TEMP% °C</span></td></tr>
+  </table>
+
+</body>
+</html>
